@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/Tablaeu_AutoIT/src/run/Verify_version_info_in_About_and_Splash_Screen.java"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="1"/>
+</listAttribute>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="run.Verify_version_info_in_About_and_Splash_Screen"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="Tablaeu_AutoIT"/>
+</launchConfiguration>

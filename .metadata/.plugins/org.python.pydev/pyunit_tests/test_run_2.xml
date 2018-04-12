@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?pydev-testrun version="1.0"?><pydev-testsuite>
+<summary errors="0" failures="0" finished="true" name="Test Run: 15" tests="1" total_time="Finished in: 93.24 secs."/>
+<test location="E:\Sourabh_Selenium\Sel\Selenium_python\Base\Test1.py" status="ok" test="Test.testName" time="93.23">
+<stdout/>
+<stderr/>
+</test>
+<launch mode="debug">
+<launch_memento><![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration local="true" path="Selenium_python Test1.py"/>
+]]></launch_memento>
+</launch>
+</pydev-testsuite>

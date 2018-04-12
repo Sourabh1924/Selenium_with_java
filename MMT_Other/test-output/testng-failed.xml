@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="atu_reporte.NewTest">
+        <methods>
+          <include name="afterTest"/>
+          <include name="Launch"/>
+          <include name="Properties"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- atu_reporte.NewTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

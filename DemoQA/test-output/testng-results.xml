@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="58303" started-at="2017-12-12T17:09:40Z" finished-at="2017-12-12T17:10:38Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="58303" started-at="2017-12-12T17:09:40Z" finished-at="2017-12-12T17:10:38Z">
+      <class name="com.QA.Droppable.Revert_draggable_Position">
+        <test-method status="PASS" signature="run()[pri:0, instance:com.QA.Droppable.Revert_draggable_Position@343f4d3d]" name="run" duration-ms="58272" started-at="2017-12-12T22:39:40Z" finished-at="2017-12-12T22:40:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- run -->
+      </class> <!-- com.QA.Droppable.Revert_draggable_Position -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

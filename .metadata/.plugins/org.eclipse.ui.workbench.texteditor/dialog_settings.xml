@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item value="false" key="isRegEx"/>
+		<item value="BS_flight" key="selection"/>
+		<item value="false" key="casesensitive"/>
+		<item value="false" key="incremental"/>
+		<item value="true" key="wrap"/>
+		<item value="false" key="wholeword"/>
+		<list key="findhistory">
+			<item value="BS_flight"/>
+			<item value=".//*[@id=&apos;frm&apos;]/div[1]/div[3]/div[4]/label/"/>
+			<item value="report1.endTest(logger);"/>
+			<item value="System.exit(1);"/>
+			<item value="Tour_type"/>
+			<item value="cssSelector"/>
+			<item value="Integer.parseInt"/>
+			<item value="Out"/>
+		</list>
+		<list key="replacehistory">
+			<item value="Xpath_Car"/>
+			<item value="Xpath_Car1"/>
+			<item value="//div[@class=&apos;aff-custom-element__label&apos;]/following-sibling::"/>
+			<item value="Utility_libraries.Close(driver,report1,logger);"/>
+			<item value="  "/>
+			<item value="logger"/>
+			<item value="xpath"/>
+			<item value="Double.parseDouble"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item value="271" key="DIALOG_WIDTH"/>
+		<item value="1|Arial|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|0|0|0|0|0|Arial" key="DIALOG_FONT_NAME"/>
+		<item value="377" key="DIALOG_HEIGHT"/>
+		<item value="845" key="DIALOG_X_ORIGIN"/>
+		<item value="359" key="DIALOG_Y_ORIGIN"/>
+	</section>
+</section>

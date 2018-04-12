@@ -1,0 +1,10 @@
+package com.RA.e2e;
+
+import org.testng.annotations.Test;
+
+public class RA_Script1 {
+
+	public static void main(String[] args) {
+	}
+	
+}

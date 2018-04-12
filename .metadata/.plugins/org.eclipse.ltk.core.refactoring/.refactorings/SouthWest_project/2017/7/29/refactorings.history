@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 3 elements to &apos;WordPress/src/libraries&apos;&#x0D;&#x0A;- Original project: &apos;SouthWest_project&apos;&#x0D;&#x0A;- Destination element: &apos;WordPress/src/libraries&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     libraries.Excel_libraries.java&#x0D;&#x0A;     libraries.Local_libraries.java&#x0D;&#x0A;     libraries.Utility_libraries.java" description="Copy compilation units" destination="=WordPress/src&lt;libraries" element1="/src&lt;libraries{Excel_libraries.java" element2="/src&lt;libraries{Local_libraries.java" element3="/src&lt;libraries{Utility_libraries.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1500559134031" units="3" version="1.0"/>
+</session>

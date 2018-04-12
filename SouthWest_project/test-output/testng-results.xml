@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="91274" started-at="2017-11-13T12:04:34Z" finished-at="2017-11-13T12:06:05Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="91274" started-at="2017-11-13T12:04:34Z" finished-at="2017-11-13T12:06:05Z">
+      <class name="script.Scenario_hotel">
+        <test-method status="PASS" signature="Create()[pri:0, instance:script.Scenario_hotel@14bf9759]" name="Create" is-config="true" duration-ms="575" started-at="2017-11-13T17:34:34Z" finished-at="2017-11-13T17:34:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Create -->
+        <test-method status="PASS" signature="Launch()[pri:0, instance:script.Scenario_hotel@14bf9759]" name="Launch" duration-ms="20336" started-at="2017-11-13T17:34:34Z" finished-at="2017-11-13T17:34:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Launch -->
+        <test-method status="PASS" signature="Flush(org.testng.ITestResult)[pri:0, instance:script.Scenario_hotel@14bf9759]" name="Flush" is-config="true" duration-ms="26" started-at="2017-11-13T17:34:55Z" finished-at="2017-11-13T17:34:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Launch status=SUCCESS method=Scenario_hotel.Launch()[pri:0, instance:script.Scenario_hotel@14bf9759] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Flush -->
+        <test-method status="PASS" signature="Hotel_search()[pri:1, instance:script.Scenario_hotel@14bf9759]" name="Hotel_search" duration-ms="21924" started-at="2017-11-13T17:34:55Z" finished-at="2017-11-13T17:35:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Hotel_search -->
+        <test-method status="PASS" signature="Flush(org.testng.ITestResult)[pri:0, instance:script.Scenario_hotel@14bf9759]" name="Flush" is-config="true" duration-ms="13" started-at="2017-11-13T17:35:17Z" finished-at="2017-11-13T17:35:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Hotel_search status=SUCCESS method=Scenario_hotel.Hotel_search()[pri:1, instance:script.Scenario_hotel@14bf9759] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Flush -->
+        <test-method status="PASS" signature="Hotel_room_select()[pri:2, instance:script.Scenario_hotel@14bf9759]" name="Hotel_room_select" duration-ms="14891" started-at="2017-11-13T17:35:17Z" finished-at="2017-11-13T17:35:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Hotel_room_select -->
+        <test-method status="PASS" signature="Flush(org.testng.ITestResult)[pri:0, instance:script.Scenario_hotel@14bf9759]" name="Flush" is-config="true" duration-ms="10" started-at="2017-11-13T17:35:32Z" finished-at="2017-11-13T17:35:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Hotel_room_select status=SUCCESS method=Scenario_hotel.Hotel_room_select()[pri:2, instance:script.Scenario_hotel@14bf9759] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Flush -->
+        <test-method status="PASS" signature="Customer_details()[pri:3, instance:script.Scenario_hotel@14bf9759]" name="Customer_details" duration-ms="21020" started-at="2017-11-13T17:35:32Z" finished-at="2017-11-13T17:35:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Customer_details -->
+        <test-method status="PASS" signature="Flush(org.testng.ITestResult)[pri:0, instance:script.Scenario_hotel@14bf9759]" name="Flush" is-config="true" duration-ms="96" started-at="2017-11-13T17:35:53Z" finished-at="2017-11-13T17:35:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Customer_details status=SUCCESS method=Scenario_hotel.Customer_details()[pri:3, instance:script.Scenario_hotel@14bf9759] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Flush -->
+        <test-method status="PASS" signature="Payment_details()[pri:4, instance:script.Scenario_hotel@14bf9759]" name="Payment_details" duration-ms="6571" started-at="2017-11-13T17:35:53Z" finished-at="2017-11-13T17:35:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Payment_details -->
+        <test-method status="PASS" signature="Flush(org.testng.ITestResult)[pri:0, instance:script.Scenario_hotel@14bf9759]" name="Flush" is-config="true" duration-ms="6" started-at="2017-11-13T17:35:59Z" finished-at="2017-11-13T17:35:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Payment_details status=SUCCESS method=Scenario_hotel.Payment_details()[pri:4, instance:script.Scenario_hotel@14bf9759] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Flush -->
+        <test-method status="PASS" signature="Close()[pri:0, instance:script.Scenario_hotel@14bf9759]" name="Close" is-config="true" duration-ms="5772" started-at="2017-11-13T17:35:59Z" finished-at="2017-11-13T17:36:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Close -->
+      </class> <!-- script.Scenario_hotel -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

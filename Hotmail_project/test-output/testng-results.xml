@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="5" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="111477" started-at="2018-01-23T16:44:09Z" finished-at="2018-01-23T16:46:00Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="111477" started-at="2018-01-23T16:44:09Z" finished-at="2018-01-23T16:46:00Z">
+      <class name="com.HM.e2e.Mail_script_multiple_iteration_2">
+        <test-method status="PASS" signature="Create()[pri:0, instance:com.HM.e2e.Mail_script_multiple_iteration_2@3abbfa04]" name="Create" is-config="true" duration-ms="345" started-at="2018-01-23T22:14:08Z" finished-at="2018-01-23T22:14:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Create -->
+        <test-method status="PASS" signature="Launch()[pri:0, instance:com.HM.e2e.Mail_script_multiple_iteration_2@3abbfa04]" name="Launch" is-config="true" duration-ms="14443" started-at="2018-01-23T22:14:09Z" finished-at="2018-01-23T22:14:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Launch -->
+        <test-method status="PASS" signature="Login_HM_page()[pri:1, instance:com.HM.e2e.Mail_script_multiple_iteration_2@3abbfa04]" name="Login_HM_page" duration-ms="11828" started-at="2018-01-23T22:14:23Z" finished-at="2018-01-23T22:14:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login_HM_page -->
+        <test-method status="PASS" signature="Flush(org.testng.ITestResult)[pri:0, instance:com.HM.e2e.Mail_script_multiple_iteration_2@3abbfa04]" name="Flush" is-config="true" duration-ms="22" started-at="2018-01-23T22:14:35Z" finished-at="2018-01-23T22:14:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Login_HM_page status=SUCCESS method=Mail_script_multiple_iteration_2.Login_HM_page()[pri:1, instance:com.HM.e2e.Mail_script_multiple_iteration_2@3abbfa04] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Flush -->
+        <test-method status="PASS" signature="Mail(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.HM.e2e.Mail_script_multiple_iteration_2@3abbfa04]" name="Mail" duration-ms="34184" started-at="2018-01-23T22:14:35Z" data-provider="Send_Mail_Data" finished-at="2018-01-23T22:15:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[memo@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Sourabh@gmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Sample mail]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[scadcasvv]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Mail -->
+        <test-method status="PASS" signature="Flush(org.testng.ITestResult)[pri:0, instance:com.HM.e2e.Mail_script_multiple_iteration_2@3abbfa04]" name="Flush" is-config="true" duration-ms="22" started-at="2018-01-23T22:15:09Z" finished-at="2018-01-23T22:15:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Mail status=SUCCESS method=Mail_script_multiple_iteration_2.Mail(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.HM.e2e.Mail_script_multiple_iteration_2@3abbfa04] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Flush -->
+        <test-method status="PASS" signature="Mail(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.HM.e2e.Mail_script_multiple_iteration_2@3abbfa04]" name="Mail" duration-ms="9278" started-at="2018-01-23T22:15:09Z" data-provider="Send_Mail_Data" finished-at="2018-01-23T22:15:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Sourabh@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[memo@gmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Sample mail1]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Souarbh]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Mail -->
+        <test-method status="PASS" signature="Flush(org.testng.ITestResult)[pri:0, instance:com.HM.e2e.Mail_script_multiple_iteration_2@3abbfa04]" name="Flush" is-config="true" duration-ms="6" started-at="2018-01-23T22:15:18Z" finished-at="2018-01-23T22:15:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Mail status=SUCCESS method=Mail_script_multiple_iteration_2.Mail(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.HM.e2e.Mail_script_multiple_iteration_2@3abbfa04] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Flush -->
+        <test-method status="PASS" signature="Send_mail_verify()[pri:3, instance:com.HM.e2e.Mail_script_multiple_iteration_2@3abbfa04]" name="Send_mail_verify" duration-ms="30102" started-at="2018-01-23T22:15:18Z" finished-at="2018-01-23T22:15:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Send_mail_verify -->
+        <test-method status="PASS" signature="Flush(org.testng.ITestResult)[pri:0, instance:com.HM.e2e.Mail_script_multiple_iteration_2@3abbfa04]" name="Flush" is-config="true" duration-ms="3" started-at="2018-01-23T22:15:48Z" finished-at="2018-01-23T22:15:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Send_mail_verify status=SUCCESS method=Mail_script_multiple_iteration_2.Send_mail_verify()[pri:3, instance:com.HM.e2e.Mail_script_multiple_iteration_2@3abbfa04] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Flush -->
+        <test-method status="PASS" signature="Logout_HM_page()[pri:4, instance:com.HM.e2e.Mail_script_multiple_iteration_2@3abbfa04]" name="Logout_HM_page" duration-ms="11524" started-at="2018-01-23T22:15:48Z" finished-at="2018-01-23T22:16:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Logout_HM_page -->
+        <test-method status="PASS" signature="Flush(org.testng.ITestResult)[pri:0, instance:com.HM.e2e.Mail_script_multiple_iteration_2@3abbfa04]" name="Flush" is-config="true" duration-ms="4" started-at="2018-01-23T22:16:00Z" finished-at="2018-01-23T22:16:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Logout_HM_page status=SUCCESS method=Mail_script_multiple_iteration_2.Logout_HM_page()[pri:4, instance:com.HM.e2e.Mail_script_multiple_iteration_2@3abbfa04] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Flush -->
+        <test-method status="PASS" signature="Close()[pri:0, instance:com.HM.e2e.Mail_script_multiple_iteration_2@3abbfa04]" name="Close" is-config="true" duration-ms="25" started-at="2018-01-23T22:16:00Z" finished-at="2018-01-23T22:16:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Close -->
+        <test-method status="PASS" signature="Cleanup()[pri:0, instance:com.HM.e2e.Mail_script_multiple_iteration_2@3abbfa04]" name="Cleanup" is-config="true" duration-ms="145" started-at="2018-01-23T22:16:00Z" finished-at="2018-01-23T22:16:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Cleanup -->
+      </class> <!-- com.HM.e2e.Mail_script_multiple_iteration_2 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

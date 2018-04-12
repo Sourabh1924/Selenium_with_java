@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="89454" started-at="2018-04-11T16:14:06Z" finished-at="2018-04-11T16:15:36Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="89454" started-at="2018-04-11T16:14:06Z" finished-at="2018-04-11T16:15:36Z">
+      <class name="com.RA.e2e.RA_script">
+        <test-method status="PASS" signature="Create()[pri:0, instance:com.RA.e2e.RA_script@271053e1]" name="Create" is-config="true" duration-ms="583" started-at="2018-04-11T21:44:06Z" finished-at="2018-04-11T21:44:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Create -->
+        <test-method status="PASS" signature="Launch()[pri:1, instance:com.RA.e2e.RA_script@271053e1]" name="Launch" duration-ms="30637" started-at="2018-04-11T21:44:07Z" finished-at="2018-04-11T21:44:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Launch -->
+        <test-method status="PASS" signature="Flush(org.testng.ITestResult)[pri:0, instance:com.RA.e2e.RA_script@271053e1]" name="Flush" is-config="true" duration-ms="67" started-at="2018-04-11T21:44:38Z" finished-at="2018-04-11T21:44:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Launch status=SUCCESS method=RA_script.Launch()[pri:1, instance:com.RA.e2e.RA_script@271053e1] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Flush -->
+        <test-method status="PASS" signature="Login_RA_page()[pri:2, instance:com.RA.e2e.RA_script@271053e1]" name="Login_RA_page" duration-ms="34614" started-at="2018-04-11T21:44:38Z" finished-at="2018-04-11T21:45:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login_RA_page -->
+        <test-method status="PASS" signature="Flush(org.testng.ITestResult)[pri:0, instance:com.RA.e2e.RA_script@271053e1]" name="Flush" is-config="true" duration-ms="10" started-at="2018-04-11T21:45:12Z" finished-at="2018-04-11T21:45:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Login_RA_page status=SUCCESS method=RA_script.Login_RA_page()[pri:2, instance:com.RA.e2e.RA_script@271053e1] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Flush -->
+        <test-method status="PASS" signature="Logout_RA_page()[pri:3, instance:com.RA.e2e.RA_script@271053e1]" name="Logout_RA_page" duration-ms="23500" started-at="2018-04-11T21:45:12Z" finished-at="2018-04-11T21:45:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Logout_RA_page -->
+        <test-method status="PASS" signature="Flush(org.testng.ITestResult)[pri:0, instance:com.RA.e2e.RA_script@271053e1]" name="Flush" is-config="true" duration-ms="7" started-at="2018-04-11T21:45:36Z" finished-at="2018-04-11T21:45:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Logout_RA_page status=SUCCESS method=RA_script.Logout_RA_page()[pri:3, instance:com.RA.e2e.RA_script@271053e1] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Flush -->
+        <test-method status="PASS" signature="Close()[pri:0, instance:com.RA.e2e.RA_script@271053e1]" name="Close" is-config="true" duration-ms="13" started-at="2018-04-11T21:45:36Z" finished-at="2018-04-11T21:45:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Close -->
+      </class> <!-- com.RA.e2e.RA_script -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

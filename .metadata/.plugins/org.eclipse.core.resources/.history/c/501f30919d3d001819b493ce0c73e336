@@ -1,0 +1,13 @@
+package com.RA.e2e;
+
+import org.testng.annotations.Test;
+
+public class RA_Script1 {
+
+	@Test
+	public void run()
+	{
+		
+	}
+	
+}

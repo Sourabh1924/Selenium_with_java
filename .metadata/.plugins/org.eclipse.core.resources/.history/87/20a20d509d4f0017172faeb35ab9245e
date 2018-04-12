@@ -1,0 +1,229 @@
+package package_3;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.ITestResult;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.ExtentTest;
+import com.relevantcodes.extentreports.LogStatus;
+import libraries.Excel_libraries;
+import libraries.Utility_libraries;
+import package_2.Element_lab1;
+
+public class Flight_booking {
+
+	
+		//-----------------------------------------Data initialization----------------------------------------------
+		static WebDriver driver;                          // Create Driver instance
+		static ExtentReports report1;                     // Create Reporter instance 
+		static ExtentTest logger;						  // Create Logger instance
+		static Element_lab1 Elem_obj ;			  		  // Create Class object
+		static WebDriverWait wait;						  // Create wait object	
+		public static String testName="Enroll_user";	  // Create testname 
+		static long S_time;								  // Start time of test
+		static String Parent__window = "";				  // Create a Parent object
+		static String Child_window = "";				  // Create a Child object
+		static String Rum_price = "";					  // Store rum price
+		static long E_time;								  // End time of test
+
+		@BeforeTest
+		public void Create() throws Throwable {	 
+			 
+			//--------------------------------------Delete the previous folders---------------------------------------
+			//Function_libraries.Delete_folder();
+			//------------------------------------------Create class object------------------------------------------- 
+			Elem_obj = new Element_lab1();		 
+			//--------------------------------------------Calling report-----------------------------------------------
+			report1=Utility_libraries.Report();
+			//------------------------------------------Create a Excel file--------------------------------------------
+			Excel_libraries.Create_Excel_file();  	
+		}
+		
+		@Test(priority=0)
+		public void Launch() throws Throwable {
+			
+			//----------------------------------------------Start report test-------------------------------------------------
+			testName=new Object(){}.getClass().getEnclosingMethod().getName();
+			logger = report1.startTest(testName);
+			    
+			//-----------------------------------------Data initialization----------------------------------------------
+			String Browser_name 	= Excel_libraries.Read("Browser_name","Enroll_data.xls");			// Browser name 
+			String URL 				= Excel_libraries.Read("URL","Enroll_data.xls");					// Web site URL
+			
+			//---------------------------------------------- Start time------------------------------------------------
+			S_time = System.nanoTime();
+			//-------------------------------------------Launch Firefox driver-----------------------------------------
+			driver=Utility_libraries.getBrowser(Browser_name);
+			//-------------------------------------------------Enter URL----------------------------------------------
+			driver.navigate().to(URL);
+			//----------------------------------------Wait statement is initialize------------------------------------
+			wait = new WebDriverWait(driver,30);
+			if(driver.getCurrentUrl().equals(URL) )
+			{
+				
+				  //===========================Reporter=============================
+				  //================================================================
+			      logger.log(LogStatus.PASS,"Step-1","URL enter after browser open");
+			      logger.log(LogStatus.PASS,logger.addScreenCapture(Utility_libraries.Screen_Report(driver)));
+			      //Function_libraries.ATUReport_Pass("Step-1",URL,"URL enter after browser open","Browser has to open");
+			      Excel_libraries.Excel_Reporter("Step-1", "URL enter after browser open", "Browser has to open", "PASS",""+new SimpleDateFormat("MM_dd_y_hhmmssa").format(new Date()));
+				  //================================================================
+				  //================================================================	
+			
+			}
+			else
+			{
+				
+				  //===========================Reporter=============================
+				  //================================================================
+			      logger.log(LogStatus.FAIL,"Step-1","URL is not enter after browser open");
+			      logger.log(LogStatus.FAIL,logger.addScreenCapture(Utility_libraries.Screen_Report(driver)));
+			      //Function_libraries.ATUReport_Fail("Step-1",URL,"URL is not enter after browser open", "Browser open but URL is not enter");
+			      Excel_libraries.Excel_Reporter("Step-1", "URL is not enter after browser open", "Browser open but URL is not enter", "FAIL",""+new SimpleDateFormat("MM_dd_y_hhmmssa").format(new Date()));
+				  //================================================================
+				  //================================================================	
+		    
+			}
+		  
+		}
+	
+		@Test(priority=1)
+		public void Search_flight()
+		{
+			driver.findElement(By.cssSelector("#trip-type-one-way")).click();
+			driver.findElement(By.cssSelector("#air-city-departure")).sendKeys("LGA");
+			driver.findElement(By.cssSelector("#air-city-arrival")).sendKeys("MSY");
+			driver.findElement(By.cssSelector("#air-date-departure")).clear();
+			driver.findElement(By.cssSelector("#air-date-departure")).sendKeys("07/24");
+			driver.findElement(By.cssSelector("#air-date-departure")).clear();
+			driver.findElement(By.cssSelector("#air-date-departure")).sendKeys("07/24");
+			driver.findElement(By.cssSelector("#jb-booking-form-submit-button")).click();
+		}
+		
+		@Test(priority=2)
+		public void Select_flight()
+		{
+			Thread.sleep(5000);
+			driver.findElement(By.cssSelector("#Out1A")).click();
+			driver.findElement(By.cssSelector("#priceItinerarySubmit")).click();
+			String Price = driver.findElement(By.cssSelector(".carhotel_price_header_amount.price_carhotel_header")).getText();		
+			Price = Price.replace("$", "");
+			driver.findElement(By.cssSelector("#priceSubmitButton")).click();
+		}
+		
+		@Test(priority=3)
+		public void Customer_details()
+		{
+
+			driver.findElement(By.cssSelector("#firstName0")).sendKeys("sourabh");
+			driver.findElement(By.cssSelector("#middleName0")).sendKeys("");
+			driver.findElement(By.cssSelector("#lastName0")).sendKeys("chakroborty");
+			
+			WebElement title = driver.findElement(By.cssSelector("#suffix0"));
+			Select dropdown_Card_type = new Select(title);
+			dropdown_Card_type.selectByVisibleText("MD");
+			
+			WebElement month = driver.findElement(By.cssSelector("#dobMonth0"));
+			Select dropdown_Card_type1 = new Select(month);
+			dropdown_Card_type1.selectByVisibleText("2 - February");
+			
+			WebElement day = driver.findElement(By.cssSelector("#dobDay0"));
+			Select dropdown_Card_type2 = new Select(day);
+			dropdown_Card_type2.selectByVisibleText("15");
+			
+			WebElement year = driver.findElement(By.cssSelector("#dobYear0"));
+			Select dropdown_Card_type3 = new Select(year);
+			dropdown_Card_type3.selectByVisibleText("1990");
+			
+			WebElement Gender = driver.findElement(By.cssSelector("#gender0"));
+			Select dropdown_Card_type4 = new Select(Gender);
+			dropdown_Card_type4.selectByVisibleText("Male");
+			
+			driver.findElement(By.cssSelector("#js-email")).sendKeys("memo.sourabh@gmail.com");
+		}
+		
+		@Test(priority=4)
+		public void Payment_details()
+		{
+			WebElement Card_type = driver.findElement(By.cssSelector("#creditCardType"));
+			Select dropdown_Card_type5 = new Select(Card_type);
+			dropdown_Card_type5.selectByVisibleText("MasterCard");
+			
+			driver.findElement(By.cssSelector("#creditCardNumber1")).sendKeys("458965265412");
+			
+			WebElement Exp_month = driver.findElement(By.cssSelector("#expirationMonth"));
+			Select dropdown_Card_type6 = new Select(Exp_month);
+			dropdown_Card_type6.selectByVisibleText("6 - June");
+			
+			WebElement Exp_year = driver.findElement(By.cssSelector("#expirationYear"));
+			Select dropdown_Card_type7 = new Select(Exp_year);
+			dropdown_Card_type7.selectByVisibleText("2018");
+			
+			String total_price = driver.findElement(By.cssSelector("#purchaseSummaryTotalCost")).getText();
+			total_price = total_price.replace("$", "");
+//			if(total_price.equals(Price))
+//			{
+//				System.out.println("Price is same");
+//			}
+			
+			String aa = driver.findElement(By.cssSelector(".to_from_arrow_right")).getText();
+			String bb = driver.findElement(By.cssSelector(".to_from_arrow_left")).getText();
+			System.out.println(aa+" "+" "+bb);
+		}
+		
+		@AfterMethod	
+		public void Flush(ITestResult result) throws Throwable
+			
+		  {
+				if(result.getStatus()==ITestResult.FAILURE) 
+				{ 
+					
+					logger.log(LogStatus.FAIL,"Error :"+result.getThrowable());//+report.getClass()+" Test "+logger.getTest().statusMessage);//,ClassTest.takeScreenShot());
+					
+				}		
+				  if (result.getStatus() == ITestResult.FAILURE) {
+			            logger.log(LogStatus.FAIL, "Test '"+ testName+ "' Failed : Cause>>"+result.getThrowable(),logger.addScreenCapture(Utility_libraries.Screen_Report(driver)));
+			            Excel_libraries.Excel_Reporter("Step-Fail", ""+result.getThrowable() , "Condition must be fullfill", "FAIL",""+new SimpleDateFormat("MM_dd_y_hhmmssa").format(new Date()));
+				  	} else if (result.getStatus() == ITestResult.SKIP) {
+			        	logger.log(LogStatus.SKIP, "Test '"+ testName+ "' skipped : Cause>>"+ result.getThrowable(),logger.addScreenCapture(Utility_libraries.Screen_Report(driver)));
+			        } else {
+			        	logger.log(LogStatus.PASS, "Test  '"+ testName+"'  passed");
+			        }	  
+				 report1.endTest(logger);
+				 report1.flush();
+				    
+			}
+		
+		@AfterTest
+		public void Close() {
+			
+		driver.close();
+		driver.switchTo().window(Child_window);
+		driver.close();
+		driver.switchTo().window(Parent__window);
+		driver.close();
+	}
+
+		@AfterSuite
+		public void Zip_folder() throws Exception
+		  {
+			  //---------------------------------It will generate TestNG report into Excel file------------
+			  org.automationtesting.excelreport.Xl.generateReport(Excel_libraries.Folder_path,"Excel_report.xlsx");
+			  //---------------------------------------------Create a Zip Folder--------------------------- 
+			  Utility_libraries.Zip_folder("Hotel_Booking");
+		  }
+
+		
+		
+		
+}

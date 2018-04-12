@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="0" key="org.eclipse.egit.ui.internal.clone.GitSelectWizardPageWizardSel"/>
+	<item value="630" key="DIALOG_WIDTH"/>
+	<item value="1|Arial|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|0|0|0|0|0|Arial" key="DIALOG_FONT_NAME"/>
+	<item value="true" key="CommitDialog.showUntracked"/>
+	<item value="E:\Selenium_git\.git" key="GitSelectRepositoryPage.lastRepository"/>
+	<item value="534" key="DIALOG_HEIGHT"/>
+	<item value="376" key="DIALOG_X_ORIGIN"/>
+	<item value="16" key="DIALOG_Y_ORIGIN"/>
+	<list key="RepositorySelectionPage.UsedUris">
+		<item value="https://github.com/Sourabh1924/First_repo.git"/>
+		<item value="https://github.com/Sourabh1924/Repo1.git"/>
+	</list>
+	<list key="CommitDialog.authorValues">
+		<item value="Ram &lt;memo.sourabh@gmail.com&gt;"/>
+	</list>
+	<list key="CommitDialog.committerValues">
+		<item value="Ram &lt;memo.sourabh@gmail.com&gt;"/>
+	</list>
+	<section name="GitImportWizard">
+	</section>
+	<section name="org.eclipse.egit.ui.internal.push.PushResultDialog.dialogBounds">
+		<item value="666" key="DIALOG_WIDTH"/>
+		<item value="1|Arial|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|0|0|0|0|0|Arial" key="DIALOG_FONT_NAME"/>
+		<item value="454" key="DIALOG_HEIGHT"/>
+		<item value="358" key="DIALOG_X_ORIGIN"/>
+		<item value="70" key="DIALOG_Y_ORIGIN"/>
+		<list key="sashWeights">
+			<item value="600"/>
+			<item value="400"/>
+		</list>
+	</section>
+	<section name="org.eclipse.egit.ui.internal.pull.PullResultDialog.dialogBounds">
+		<item value="465" key="DIALOG_WIDTH"/>
+		<item value="1|Arial|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|0|0|0|0|0|Arial" key="DIALOG_FONT_NAME"/>
+		<item value="291" key="DIALOG_HEIGHT"/>
+		<item value="459" key="DIALOG_X_ORIGIN"/>
+		<item value="178" key="DIALOG_Y_ORIGIN"/>
+	</section>
+	<section name="org.eclipse.egit.ui.COMMIT_DIALOG_SECTION">
+		<item value="642" key="DIALOG_WIDTH"/>
+		<item value="1|Arial|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|0|0|0|0|0|Arial" key="DIALOG_FONT_NAME"/>
+		<item value="637" key="DIALOG_HEIGHT"/>
+		<item value="370" key="DIALOG_X_ORIGIN"/>
+		<item value="8" key="DIALOG_Y_ORIGIN"/>
+	</section>
+	<section name="GitCommitMessageComponent">
+	</section>
+	<section name="org.eclipse.egit.ui.internal.fetch.FetchResultDialog.dialogBounds">
+		<item value="616" key="DIALOG_WIDTH"/>
+		<item value="1|Arial|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|0|0|0|0|0|Arial" key="DIALOG_FONT_NAME"/>
+		<item value="454" key="DIALOG_HEIGHT"/>
+		<item value="383" key="DIALOG_X_ORIGIN"/>
+		<item value="70" key="DIALOG_Y_ORIGIN"/>
+	</section>
+	<section name="org.eclipse.egit.ui.internal.staging.StagingView">
+		<item value="200,200" key="STAGING_SASH_FORM_WEIGHT"/>
+		<item value="false" key="sortItemState"/>
+		<item value="200,200" key="HORIZONTAL_SASH_FORM_WEIGHT"/>
+	</section>
+</section>

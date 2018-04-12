@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test name="Test">
+    <classes>
+      <class name="testNG.Gmail_by_class">
+      	<parameter name="strBrowserName" value="firefox"></parameter>
+      	<parameter name="strURL" value="https://www.gmail.com"></parameter>
+      	<parameter name="strusername" value="memo.sourabh@gmail.com"></parameter>
+      	<parameter name="strpassword" value="sourabh24"></parameter></class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

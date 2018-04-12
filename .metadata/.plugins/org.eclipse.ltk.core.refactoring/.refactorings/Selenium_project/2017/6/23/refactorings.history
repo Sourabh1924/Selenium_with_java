@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Extract local variable &apos;list&apos; from expression &apos;(List&lt;WebElement&gt;)lst.get(5)&apos;&#x0D;&#x0A;- Original project: &apos;Selenium_project&apos;&#x0D;&#x0A;- Variable name: &apos;list&apos;&#x0D;&#x0A;- Destination method: &apos;java_program.Example.main()&apos;&#x0D;&#x0A;- Variable expression: &apos;(List&lt;WebElement&gt;)lst.get(5)&apos;&#x0D;&#x0A;- Replace occurrences of expression with variable" description="Extract local variable &apos;list&apos;" final="false" id="org.eclipse.jdt.ui.extract.temp" input="/src&lt;java_program{Example.java" name="list" replace="true" selection="1677 29" stamp="1496682470587" version="1.0"/>
+</session>

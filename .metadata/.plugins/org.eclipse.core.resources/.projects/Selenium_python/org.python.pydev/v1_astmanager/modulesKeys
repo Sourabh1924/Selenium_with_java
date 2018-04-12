@@ -1,0 +1,17 @@
+MODULES_MANAGER_V2
+Advantage.__init__|E:\Sourabh_Selenium\Sel\Selenium_python\Advantage\__init__.py
+Advantage.element|E:\Sourabh_Selenium\Sel\Selenium_python\Advantage\element.py
+Advantage.locators|E:\Sourabh_Selenium\Sel\Selenium_python\Advantage\locators.py
+Advantage.page|E:\Sourabh_Selenium\Sel\Selenium_python\Advantage\page.py
+Advantage.test|E:\Sourabh_Selenium\Sel\Selenium_python\Advantage\test.py
+Base.Test|E:\Sourabh_Selenium\Sel\Selenium_python\Base\Test.py
+Base.Test1|E:\Sourabh_Selenium\Sel\Selenium_python\Base\Test1.py
+Project.Environment_Setup|E:\Sourabh_Selenium\Sel\Selenium_python\Project\Environment_Setup.py
+Project.HTML_Report|E:\Sourabh_Selenium\Sel\Selenium_python\Project\HTML_Report.py
+Project.ScreenShort_Lab|E:\Sourabh_Selenium\Sel\Selenium_python\Project\ScreenShort_Lab.py
+Project.Test|E:\Sourabh_Selenium\Sel\Selenium_python\Project\Test.py
+Project.Test_Suit|E:\Sourabh_Selenium\Sel\Selenium_python\Project\Test_Suit.py
+Project.__init__|E:\Sourabh_Selenium\Sel\Selenium_python\Project\__init__.py
+Project.element|E:\Sourabh_Selenium\Sel\Selenium_python\Project\element.py
+Project.locators|E:\Sourabh_Selenium\Sel\Selenium_python\Project\locators.py
+Project.page|E:\Sourabh_Selenium\Sel\Selenium_python\Project\page.py
