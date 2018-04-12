@@ -1,0 +1,43 @@
+'''
+Created on Apr 12, 2018
+
+@author: Ideliver
+'''
+from selenium.webdriver.common.by import By
+from Locators.locators import Locators
+from time import sleep
+from Libraries.ScreenShort_Lab import Screen_Short
+
+class LoginPage(object):
+    
+        '''--------------------------------------------------------------------'''
+        '''--------------------------------------------------------------------'''
+        '''Login POM '''
+        '''self.Username     = driver.find_element(By.NAME,Locators.Username)
+        self.Password     = driver.find_element(By.NAME,Locators.Password)
+        self.Login_button = driver.find_element(By.ID,Locators.Login)'''
+        
+        def Verify_Product_Price(self,driver,Price):
+            sleep(5)
+            VerifyPrice = driver.find_element(By.XPATH,Locators.Price)
+            try:
+                if VerifyPrice.text == Price:
+                    print("Both the Price are same")
+                    print("First price : "+Price+" Second price : "+VerifyPrice.text+" .")
+                    return VerifyPrice.text
+            except Exception as e:
+
+                    print("ERROR : Both the Price are not same")
+                    print("ERROR DESCRIPTION : "+e)
+                    print("First price : "+Price+" Second price : "+VerifyPrice.text+" .")  
+                    return VerifyPrice.text               
+        
+        def EnterUsername(self,driver,Username):                       
+            driver.find_element(By.NAME,Locators.Username).send_keys(Username) 
+        
+        def EnterPassword(self,driver,Password):           
+            driver.find_element(By.NAME,Locators.Password).send_keys(Password)          
+        
+        def ClickLogin_button(self,driver): 
+            Screen_Short.ScreenShot(self,driver)          
+            driver.find_element(By.ID,Locators.Login).click() 

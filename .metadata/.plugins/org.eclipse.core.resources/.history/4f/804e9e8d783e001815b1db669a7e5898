@@ -1,0 +1,27 @@
+'''
+Created on Apr 12, 2018
+
+@author: Ideliver
+'''
+from POM.page import BasePage
+from POM.Login_POM import LoginPage
+
+class Login_Page(object):
+    
+    '''User Login Module'''
+    def Login(self,driver,Price,Username,Password):
+        
+#         Base = BasePage()
+#         
+#         Second_Price = Base.Verify_Product_Price(driver,Price)
+#         Base.EnterUsername(driver,Username)
+#         Base.EnterPassword(driver,Password)
+#         Base.ClickLogin_button(driver)  
+#         return Second_Price
+    
+        Login = LoginPage()
+        Second_Price = Login.Verify_Product_Price(driver,Price)
+        Login.EnterUsername(driver,Username)
+        Login.EnterPassword(driver,Password)
+        Login.ClickLogin_button(driver)  
+        return Second_Price

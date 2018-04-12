@@ -1,0 +1,16 @@
+'''
+Created on Apr 12, 2018
+
+@author: Ideliver
+'''
+
+from selenium.webdriver.common.by import By
+from Locators.locators import Locators
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions
+from time import sleep
+from Libraries.ScreenShort_Lab import Screen_Short
+
+class PaymentPage(object):
+    
+    
